@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,18 +6,49 @@
 <title>Sanjay K | Portfolio</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f5f9ff;
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Segoe UI, sans-serif;
+background:#f4f8fc;
 color:#333;
-line-height:1.6;
+line-height:1.7;
+}
+
+.navbar{
+position:sticky;
+top:0;
+background:white;
+padding:15px 0;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+text-align:center;
+}
+
+.navbar a{
+text-decoration:none;
+color:#0a3d62;
+font-weight:600;
+margin:0 15px;
+}
+
+.navbar a:hover{
+color:#0a66c2;
 }
 
 header{
-background:#0a66c2;
+background:linear-gradient(135deg,#0a66c2,#083d77);
 color:white;
-padding:40px;
+padding:50px 20px;
 text-align:center;
 }
 
@@ -28,98 +58,172 @@ height:180px;
 border-radius:50%;
 object-fit:cover;
 border:5px solid white;
-margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
 
-nav{
-margin-top:20px;
-margin-bottom:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-nav a:hover{
-text-decoration:underline;
-}
-  
 header h1{
-margin:0;
-font-size:40px;
+margin-top:20px;
+font-size:42px;
 }
 
 header p{
 font-size:20px;
-}
-
-.container{
-width:85%;
-margin:auto;
-padding:20px;
-}
-
-section{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#0a66c2;
+margin-top:10px;
 }
 
 .button{
 display:inline-block;
-padding:12px 20px;
-background:#0a66c2;
-color:white;
-text-decoration:none;
+padding:12px 22px;
+margin:10px;
 border-radius:8px;
-margin:5px;
-}
-
-ul{
-padding-left:20px;
-}
-
-footer{
-background:#0a66c2;
+text-decoration:none;
+font-weight:bold;
 color:white;
-text-align:center;
-padding:20px;
+transition:0.3s;
 }
 
-html{
-scroll-behavior:smooth;
+.github-btn{
+background:#24292e;
+}
+
+.linkedin-btn{
+background:#0a66c2;
+}
+
+.button:hover{
+transform:translateY(-3px);
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:30px 0;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+margin-bottom:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+h2{
+color:#083d77;
+margin-bottom:20px;
+}
+
+.education-grid,
+.experience-grid,
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.edu-card,
+.exp-card,
+.cert-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.edu-card:hover,
+.exp-card:hover,
+.cert-card:hover{
+transform:translateY(-5px);
 }
 
 .skills-container{
 display:flex;
 flex-wrap:wrap;
 gap:15px;
-margin-top:20px;
+margin-top:15px;
+margin-bottom:25px;
 }
 
 .skill-card{
 background:#0a66c2;
 color:white;
 padding:12px 20px;
-border-radius:10px;
+border-radius:30px;
 font-weight:bold;
-box-shadow:0 2px 8px rgba(0,0,0,0.15);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
 }
-  
+
+.skill-card:hover{
+background:#083d77;
+}
+
+.project-card{
+background:white;
+padding:30px;
+border-left:6px solid #0a66c2;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-links a{
+text-decoration:none;
+color:#0a66c2;
+font-weight:bold;
+}
+
+footer{
+background:#083d77;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+.navbar a{
+display:block;
+margin:10px;
+}
+
+header h1{
+font-size:32px;
+}
+
+.profile{
+width:150px;
+height:150px;
+}
+
+}
+
 </style>
-
 </head>
-
 <body>
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#learning">Learning</a>
+<a href="#certifications">Certifications</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+
+<!-- Header -->
 
 <header>
 
@@ -129,83 +233,129 @@ box-shadow:0 2px 8px rgba(0,0,0,0.15);
 
 <p>Data Analytics & Generative AI Intern</p>
 
-<nav>
+<br>
 
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#certifications">Certifications</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<a class="button github-btn"
+href="https://github.com/sanjaykanalytics"
+target="_blank">
+GitHub
+</a>
 
-</nav>
-
-<a class="button" href="https://github.com/sanjaykanalytics" target="_blank">GitHub</a>
-
-<a class="button" href="https://www.linkedin.com/in/sanjayk2001" target="_blank">LinkedIn</a>
+<a class="button linkedin-btn"
+href="https://www.linkedin.com/in/sanjayk2001"
+target="_blank">
+LinkedIn
+</a>
 
 </header>
 
-<a class="button" href="https://github.com/sanjaykanalytics" target="_blank">GitHub</a>
-
-<a class="button" href="https://www.linkedin.com/in/sanjayk2001" target="_blank">LinkedIn</a>
-
-</header>
 
 <div class="container">
 
-<section id="about">
-<h2>About Me</h2>
+
+<!-- About -->
+
+<section class="card" id="about">
+
+<h2>👨 About Me</h2>
 
 <p>
-I am a Data Analytics & Generative AI Intern with an MBA in Human Resource Management and a background in Hotel Management. I am passionate about data analytics, business intelligence, and transforming data into actionable insights. I continuously strive to enhance my analytical and problem-solving skills while building expertise in modern data analytics tools and technologies.
+
+I am a Data Analytics & Generative AI Intern with an MBA in Human Resource Management and a background in Hotel Management. I am passionate about data analytics, business intelligence, and transforming data into actionable insights. I continuously strive to enhance my analytical and problem-solving skills while building expertise in modern analytics tools and technologies.
+
 </p>
 
 </section>
 
-<section id="education">
 
-<h2>Education</h2>
 
-<ul>
-<li><b>MBA in Human Resource Management</b><br>
-Amity University Online</li>
+<!-- Education -->
 
-<br>
+<section class="card" id="education">
 
-<li><b>Bachelor of Hotel Management</b><br>
-Rajadhani Institute of Hotel Management and Catering Technology</li>
+<h2>🎓 Education</h2>
 
-</ul>
+<div class="education-grid">
 
-</section>
+<div class="edu-card">
 
-<section id="experience">
+<h3>MBA in Human Resource Management</h3>
 
-<h2>Experience</h2>
+<p>
+Amity University Online
+</p>
 
-<ul>
+</div>
 
-<li>
-<b>Quest Innovative Solutions Pvt Ltd</b><br>
-Data Analytics & Generative AI Intern
-</li>
+<div class="edu-card">
 
-<br>
+<h3>Bachelor of Hotel Management</h3>
 
-<li>
-<b>Jaisalmer Marriott Resort & Spa</b><br>
-Industrial Trainee
-</li>
+<p>
+Rajadhani Institute of Hotel Management and Catering Technology
+</p>
 
-</ul>
+</div>
+
+</div>
 
 </section>
 
-<section id="skills">
 
-<h2>Skills</h2>
+
+<!-- Experience -->
+
+<section class="card" id="experience">
+
+<h2>💼 Experience</h2>
+
+<div class="experience-grid">
+
+<div class="exp-card">
+
+<h3>Quest Innovative Solutions Pvt Ltd</h3>
+
+<p>
+
+<b>Position:</b> Data Analytics & Generative AI Intern
+
+<br><br>
+
+<b>Duration:</b> Present
+
+</p>
+
+</div>
+
+
+<div class="exp-card">
+
+<h3>Jaisalmer Marriott Resort & Spa</h3>
+
+<p>
+
+<b>Position:</b> Industrial Trainee
+
+<br><br>
+
+<b>Duration:</b> Jan 2023 – May 2023
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Skills -->
+
+<section class="card" id="skills">
+
+<h2>🛠 Skills</h2>
+
 
 <h3>Programming & Analytics</h3>
 
@@ -225,7 +375,9 @@ Industrial Trainee
 
 </div>
 
-<h3>Data Visualization & BI</h3>
+
+
+<h3>BI & Visualization</h3>
 
 <div class="skills-container">
 
@@ -237,13 +389,15 @@ Industrial Trainee
 
 </div>
 
+
+
 <h3>Other Skills</h3>
 
 <div class="skills-container">
 
-<div class="skill-card">Data Cleaning</div>
-
 <div class="skill-card">EDA</div>
+
+<div class="skill-card">Data Cleaning</div>
 
 <div class="skill-card">Reporting</div>
 
@@ -254,84 +408,217 @@ Industrial Trainee
 </section>
 
 
-<section id="certifications">
 
-<h2>Certifications</h2>
 
-<ul>
+<!-- Currently Learning -->
 
-<li>Tata GenAI Powered Data Analytics Job Simulation (Forage)</li>
+<section class="card" id="learning">
 
-<li>Deloitte Australia Data Analytics Job Simulation (Forage)</li>
+<h2>📚 Currently Learning</h2>
 
-<li>Hiring and Onboarding Employees with ClickUp (Coursera)</li>
+<div class="skills-container">
 
-<li>Advanced Excel (Amity University)</li>
+<div class="skill-card">Advanced SQL</div>
 
-<li>Understanding Business (LinkedIn Learning)</li>
+<div class="skill-card">Python for Data Analytics</div>
 
-<li>Additional Certifications from Amity University</li>
+<div class="skill-card">Power BI Dashboarding</div>
 
-</ul>
+<div class="skill-card">Tableau</div>
 
-</section>
+<div class="skill-card">Generative AI Applications</div>
 
-<section id="projects">
-
-<h2>Projects</h2>
-
-<ul>
-
-<li>
-<b>The Great Resignation: Rethinking Talent in the Post-Pandemic Era</b>
-</li>
-
-</ul>
+</div>
 
 </section>
 
-<section id="contact">
+<!-- Certifications -->
 
-<h2>Contact</h2>
+<section class="card" id="certifications">
+
+<h2>📜 Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+<h3>Tata GenAI Powered Data Analytics Job Simulation</h3>
+<p>Forage</p>
+</div>
+
+<div class="cert-card">
+<h3>Deloitte Australia Data Analytics Job Simulation</h3>
+<p>Forage</p>
+</div>
+
+<div class="cert-card">
+<h3>Hiring and Onboarding Employees with ClickUp</h3>
+<p>Coursera</p>
+</div>
+
+<div class="cert-card">
+<h3>Advanced Excel</h3>
+<p>Amity University</p>
+</div>
+
+<div class="cert-card">
+<h3>Understanding Business</h3>
+<p>LinkedIn Learning</p>
+</div>
+
+<div class="cert-card">
+<h3>Additional Certifications</h3>
+<p>Amity University</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Projects -->
+
+<section class="card" id="projects">
+
+<h2>📂 Projects</h2>
+
+<div class="project-card">
+
+<h3>The Great Resignation: Rethinking Talent in the Post-Pandemic Era</h3>
+
+<br>
 
 <p>
 
-📧 Email:
+An MBA project focused on employee attrition and retention in the post-pandemic labor market. The study explored factors influencing employee turnover and provided recommendations to improve talent retention strategies.
+
+</p>
+
+<br>
+
+<p>
+
+<b>Domain:</b> HR Analytics
+
+<br><br>
+
+<b>Tools Used:</b> MS Excel, Research, Data Analysis, Statistical Interpretation
+
+</p>
+
+<br>
+
+<a class="button linkedin-btn"
+href="https://github.com/sanjaykanalytics/The-Great-Resignation-Rethinking-Talent-in-the-Post-Pandemic-Era"
+target="_blank">
+
+View Project
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- Contact -->
+
+<section class="card" id="contact">
+
+<h2>📧 Contact</h2>
+
+<div class="contact-links">
+
+<p>
+
+📧 Email
+
 <br>
 
 <a href="mailto:sanjaykumartvm12@gmail.com">
+
 sanjaykumartvm12@gmail.com
-</a>
 
-<br><br>
-
-🔗 LinkedIn:
-<br>
-
-<a href="https://www.linkedin.com/in/sanjayk2001" target="_blank">
-www.linkedin.com/in/sanjayk2001
-</a>
-
-<br><br>
-
-💻 GitHub:
-<br>
-
-<a href="https://github.com/sanjaykanalytics" target="_blank">
-github.com/sanjaykanalytics
 </a>
 
 </p>
 
-</section>
+<br>
+
+<p>
+
+🔗 LinkedIn
+
+<br>
+
+<a href="https://www.linkedin.com/in/sanjayk2001"
+target="_blank">
+
+www.linkedin.com/in/sanjayk2001
+
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+💻 GitHub
+
+<br>
+
+<a href="https://github.com/sanjaykanalytics"
+target="_blank">
+
+github.com/sanjaykanalytics
+
+</a>
+
+</p>
 
 </div>
 
+</section>
+
+
+
+</div>
+
+
+
+<!-- Footer -->
+
 <footer>
 
-© 2026 Sanjay K | Portfolio Website
+<h3>Sanjay K</h3>
+
+<p>
+
+Data Analytics & Generative AI Intern
+
+</p>
+
+<br>
+
+<p>
+
+Built with HTML, CSS & GitHub Pages
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
 
 </footer>
+
+
 
 </body>
 </html>
