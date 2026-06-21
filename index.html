@@ -22,6 +22,31 @@ padding:40px;
 text-align:center;
 }
 
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+nav{
+margin-top:20px;
+margin-bottom:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+  
 header h1{
 margin:0;
 font-size:40px;
@@ -76,8 +101,30 @@ padding:20px;
 <body>
 
 <header>
+
+<img src="profile.png" class="profile">
+
 <h1>Sanjay K</h1>
+
 <p>Data Analytics & Generative AI Intern</p>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#certifications">Certifications</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<a class="button" href="https://github.com/sanjaykanalytics" target="_blank">GitHub</a>
+
+<a class="button" href="https://www.linkedin.com/in/sanjayk2001" target="_blank">LinkedIn</a>
+
+</header>
 
 <a class="button" href="https://github.com/sanjaykanalytics" target="_blank">GitHub</a>
 
@@ -87,7 +134,7 @@ padding:20px;
 
 <div class="container">
 
-<section>
+<section id="about">
 <h2>About Me</h2>
 
 <p>
@@ -96,7 +143,7 @@ I am a Data Analytics & Generative AI Intern with an MBA in Human Resource Manag
 
 </section>
 
-<section>
+<section id="education">
 
 <h2>Education</h2>
 
@@ -113,7 +160,7 @@ Rajadhani Institute of Hotel Management and Catering Technology</li>
 
 </section>
 
-<section>
+<section id="experience">
 
 <h2>Experience</h2>
 
@@ -135,7 +182,7 @@ Industrial Trainee
 
 </section>
 
-<section>
+<section id="skills">
 
 <h2>Skills</h2>
 
@@ -159,7 +206,7 @@ Industrial Trainee
 
 </section>
 
-<section>
+<section id="certifications">
 
 <h2>Certifications</h2>
 
@@ -181,7 +228,7 @@ Industrial Trainee
 
 </section>
 
-<section>
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -195,7 +242,7 @@ Industrial Trainee
 
 </section>
 
-<section>
+<section id="contact">
 
 <h2>Contact</h2>
 
